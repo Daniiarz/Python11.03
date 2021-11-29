@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="text-align: center;">
+<h1>Hello to my blog, hi friends</h1>
+<ul>
+    {% for i in posts %}
+        <li>
+            <h2>{{ i.title }}</h2>
+            <img src="{{ i.image.url }}" alt="">
+            <p>Likes : {{ i.likes }}, Reposts {{ i.reposts }}</p>
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
